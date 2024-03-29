@@ -6,17 +6,27 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "email": "email dev"
   },
   "dependencies": {
+    "@radix-ui/react-alert-dialog": "^1.0.5",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-slot": "^1.0.2",
+    "@react-email/components": "0.0.16",
+    "@react-email/tailwind": "0.0.15",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "lucide": "^0.363.0",
     "lucide-react": "^0.363.0",
     "next": "14.1.4",
+    "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-email": "2.1.1",
+    "react-hook-form": "^7.51.2",
+    "resend": "^3.2.0",
+    "sonner": "^1.4.41",
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7"
   },

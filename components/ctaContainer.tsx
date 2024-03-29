@@ -5,7 +5,7 @@ import bgSectionOne from "@/public/backgroundSectionOne.jpg";
 export const CtaContainer = () => {
   console.log(bgSectionOne);
   return (
-    <div className="px-6 py-36 mt-90 text-left backdrop ">
+    <div className="px-6 md:py-36 py-8 pb-24 mt-90 text-left backdrop ">
       <div className=" mx-auto max-w-4xl">
         <h2 className="text-white ">
           Besoin d’une solution Web pour plus de visibilité ?
@@ -19,7 +19,7 @@ export const CtaContainer = () => {
         </p>
         <Link
           href="/devis"
-          className="transition duration-350
+          className="transition
         ease-in-out mt-12 px-6 py-3 bg-primary text-white rounded-md inline-block hover:scale-105 hover:bg-green-600"
         >
           Demander un devis

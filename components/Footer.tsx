@@ -16,7 +16,7 @@ export function Footer() {
             <Image src={logo} alt="logo du site" className="w-12 h-12" />
             <h2 className="text-white text-4xl ml-2 font-semibold">NebLink</h2>
           </div>
-          <p className="text-white text-lg max-w-2xl p-1 mt-3.5 mb-6">
+          <p className="text-white text-lg max-w-2xl p-1 mt-3.5 mb-6 mr-6">
             {textFooter}
           </p>
         </div>

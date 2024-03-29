@@ -76,9 +76,6 @@
     @apply text-foreground text-2xl font-semibold mb-3 mt-2;
   }
 
-  input {
-    @apply min-w-80;
-  }
   label {
     @apply mb-3 ml-1;
   }

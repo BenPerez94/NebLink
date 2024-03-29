@@ -16,13 +16,13 @@ const Devis = () => {
         <form action="" className="bg-secondary flex flex-col p-6">
           <h4>Informations de contact</h4>
           <div className="flex flex-col md:flex-row gap-12 mb-4">
-            <div>
+            <div className="grow">
               <Label htmlFor="name" className="text-lg">
                 Nom
               </Label>
               <Input placeholder="Votre nom complet" id="name" />
             </div>
-            <div>
+            <div className="grow">
               <Label htmlFor="email" className="text-lg">
                 Email
               </Label>
@@ -30,13 +30,13 @@ const Devis = () => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row gap-12 mb-4">
-            <div>
+            <div className="grow">
               <Label htmlFor="tel" className="text-lg">
                 Numéro
               </Label>
               <Input placeholder="Votre nom complet" id="tel" />
             </div>
-            <div>
+            <div className="grow">
               <Label htmlFor="entreprise" className="text-lg">
                 Entreprise
               </Label>
