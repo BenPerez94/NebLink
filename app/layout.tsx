@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Quicksand } from "next/font/google";
+import "@/styles/globals.css";
+import Header from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"] });
+const quicksand = Quicksand({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +18,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="fr">
+      <body
+        className={cn(
+          "min-h-screen bg-background antialiased ",
+          quicksand.className
+        )}
+      >
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 120 60% 99%;
+    --foreground: 131 56% 2%;
+    --muted: 131 25% 89%;
+    --muted-foreground: 131 12% 30%;
+    --popover: 131 56% 100%;
+    --popover-foreground: 131 56% 2%;
+    --card: 131 56% 100%;
+    --card-foreground: 131 56% 2%;
+    --border: 131 8% 91%;
+    --input: 131 8% 91%;
+    --primary: 131 100% 26%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 131 16% 92%;
+    --secondary-foreground: 131 16% 12%;
+    --accent: 131 16% 92%;
+    --accent-foreground: 131 16% 12%;
+    --destructive: 8 85% 27%;
+    --destructive-foreground: 8 85% 87%;
+    --ring: 131 100% 26%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 131 60% 2%;
+    --foreground: 131 37% 97%;
+    --muted: 131 25% 11%;
+    --muted-foreground: 131 12% 70%;
+    --popover: 131 60% 2%;
+    --popover-foreground: 131 37% 97%;
+    --card: 131 60% 2%;
+    --card-foreground: 131 37% 97%;
+    --border: 131 8% 14%;
+    --input: 131 8% 14%;
+    --primary: 131 100% 26%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 131 18% 16%;
+    --secondary-foreground: 131 18% 76%;
+    --accent: 131 18% 16%;
+    --accent-foreground: 131 18% 76%;
+    --destructive: 8 85% 58%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 131 100% 26%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  main {
+    @apply pt-[74px];
+  }
+  p {
+    @apply text-xl text-foreground;
+  }
+  h1 {
+    @apply text-4xl font-semibold;
+  }
+  h2 {
+    @apply text-4xl py-2 font-semibold;
+  }
+  h3 {
+    @apply text-primary-foreground text-xl;
+  }
+
+  h4 {
+    @apply text-foreground text-2xl font-semibold mb-3 mt-2;
+  }
+
+  input {
+    @apply min-w-80;
+  }
+  label {
+    @apply mb-3 ml-1;
+  }
+
+  .backdrop {
+    background: linear-gradient(rgba(30, 40, 30, 0.85), rgba(30, 40, 30, 0.75)),
+      url("../public/backgroundSectionOne.jpg");
+    background-size: cover;
+  }
+  .backdrop1 {
+    background: linear-gradient(rgba(0, 128, 64, 0.9), rgba(0, 128, 64, 0.85)),
+      url("../public/bgWatter.jpg");
+    background-size: cover;
+  }
+}
