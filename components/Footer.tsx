@@ -27,7 +27,7 @@ export function Footer() {
             Benjamin.perez@neblink.fr
           </Link>
           <Link href="" className="text-white py-2 flex">
-            <Phone size={20} className="mt-[2px] mr-2" /> 06.59.00.71.44
+            <Phone size={20} className="mt-[2px] mr-2" /> 07.44.47.69.07
           </Link>
           <div className="flex mt-2">
             <Link href="" className="py-3 mr-2">

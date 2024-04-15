@@ -17,7 +17,7 @@ export default function Header() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const pathname = usePathname();
   return (
-    <header className="px-4 z-50 py-3 bg-[hsl(var(--foreground))] fixed top-0 w-full flex justify-between border-b-2 border-green-800">
+    <header className="md:px-14 px-4 z-50 py-3 bg-[hsl(var(--foreground))] fixed top-0 w-full flex justify-between border-b-2 border-green-800">
       <div className="flex items-center">
         <Image src={logoSite} alt="logo du site" className="w-12 h-12" />
         <h1 className="text-white ml-2">NebLink</h1>
