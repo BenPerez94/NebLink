@@ -71,7 +71,7 @@ export const ContactForm = () => {
           <div className="md:p-12 md:pr-0 pb-0  ">
             <form
               action=""
-              className="rounded-sm bg-secondary p-6 flex flex-col min-w-96"
+              className="rounded-sm bg-secondary p-6 flex flex-col sm:min-w-96 max-w-screen"
               onSubmit={handleSubmit(onSubmit)}
             >
               <Input
