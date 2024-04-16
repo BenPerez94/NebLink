@@ -11,11 +11,13 @@ interface Props {
   children: JSX.Element;
   width?: "fit-content" | "100%";
   color?: string;
+  delay?: number;
 }
 
 export const Reveal = ({
   children,
   color = "#FFF",
+  delay = 0.1,
   width = "fit-content",
 }: Props) => {
   const ref = useRef(null);
@@ -40,7 +42,7 @@ export const Reveal = ({
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.5, delay: 0.25 }}
+        transition={{ duration: 0.4, delay: delay }}
         exit={{ opacity: 0 }}
       >
         {children}
@@ -52,7 +54,7 @@ export const Reveal = ({
         }}
         initial="hidden"
         animate={slideControls}
-        transition={{ duration: 0.5, ease: "easeIn" }}
+        transition={{ duration: 0.4, ease: "easeIn", delay: delay }}
         style={{
           position: "absolute",
           top: 4,

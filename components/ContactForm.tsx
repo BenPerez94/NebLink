@@ -38,7 +38,7 @@ export const ContactForm = () => {
   return (
     <div className="md:py-20 py-8 px-4 md:px-16">
       <div className="max-w-5xl m-auto ">
-        <Reveal color="#186538">
+        <Reveal color="#186538" delay={0.2}>
           <h2>Besoin d'informations supplémentaires ?</h2>
         </Reveal>
         <div className="flex flex-col md:flex-row justify-between">
@@ -48,7 +48,7 @@ export const ContactForm = () => {
                 Contactez-nous !
               </h3>
             </Reveal>
-            <Reveal color="#186538">
+            <Reveal color="#186538" delay={0.5}>
               <p>
                 Si vous avez des questions supplémentaires ou si vous souhaitez
                 simplement en savoir plus sur nos services, n'hésitez pas à nous
@@ -68,36 +68,34 @@ export const ContactForm = () => {
             </Reveal>
           </div>
 
-          <div className="md:p-12 md:pr-0 pb-0">
-            <Reveal>
-              <form
-                action=""
-                className="rounded-sm bg-secondary p-6 flex flex-col min-w-96"
-                onSubmit={handleSubmit(onSubmit)}
-              >
-                <Input
-                  className="my-2"
-                  placeholder="Nom "
-                  {...register("nameContact", { required: true })}
-                />
-                <Input
-                  className="my-2"
-                  placeholder="Email"
-                  {...register("emailContact", { required: true })}
-                />
-                <Input
-                  className="my-2"
-                  placeholder="Numéro"
-                  {...register("numberContact", { required: true })}
-                />
-                <Textarea
-                  className="my-2 h-36 resize-none"
-                  placeholder="Message"
-                  {...register("messageContact", { required: true })}
-                />
-                <Button className=" max-w-24 m-auto mt-3 ">Envoyer</Button>
-              </form>
-            </Reveal>
+          <div className="md:p-12 md:pr-0 pb-0  ">
+            <form
+              action=""
+              className="rounded-sm bg-secondary p-6 flex flex-col min-w-96"
+              onSubmit={handleSubmit(onSubmit)}
+            >
+              <Input
+                className="my-2"
+                placeholder="Nom "
+                {...register("nameContact", { required: true })}
+              />
+              <Input
+                className="my-2"
+                placeholder="Email"
+                {...register("emailContact", { required: true })}
+              />
+              <Input
+                className="my-2"
+                placeholder="Numéro"
+                {...register("numberContact", { required: true })}
+              />
+              <Textarea
+                className="my-2 h-36 resize-none"
+                placeholder="Message"
+                {...register("messageContact", { required: true })}
+              />
+              <Button className=" max-w-24 m-auto mt-3 ">Envoyer</Button>
+            </form>
           </div>
         </div>
       </div>

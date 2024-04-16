@@ -1,7 +1,6 @@
 "use server";
 import Email from "@/emails";
 import { resend } from "./resend";
-import { toast } from "sonner";
 
 interface FormData {
   nameContact: string;
@@ -11,7 +10,7 @@ interface FormData {
 }
 export const SendEmail = async (dataForm: FormData) => {
   const { data, error } = await resend.emails.send({
-    from: "contact@neblink.fr",
+    from: "contact@creafannym.fr",
     to: "contact@neblink.fr",
     subject: "Formulaire de contact du site",
     react: Email(dataForm),

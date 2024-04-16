@@ -23,14 +23,17 @@ export function Footer() {
         <div className="flex flex-col">
           <h3 className="text-white text-lg font-semibold py-5">Contact</h3>
           <Link href="" className="text-white py-2 flex">
-            <Mail size={20} className="mt-[2px] mr-2" />{" "}
-            Benjamin.perez@neblink.fr
+            <Mail size={20} className="mt-[2px] mr-2" /> Contact@neblink.fr
           </Link>
           <Link href="" className="text-white py-2 flex">
-            <Phone size={20} className="mt-[2px] mr-2" /> 07.44.47.69.07
+            <Phone size={20} className="mt-[2px] mr-2" /> 07 44 47 69 07
           </Link>
           <div className="flex mt-2">
-            <Link href="" className="py-3 mr-2">
+            <Link
+              href="https://www.instagram.com/neblink34/"
+              className="py-3 mr-2"
+              target="blank"
+            >
               <Image
                 src={instagramLogo}
                 alt="logo instagram"
@@ -39,7 +42,11 @@ export function Footer() {
                 className="w-12 h-12 mt-2 mr-3 transform transition duration-300 hover:scale-110"
               />
             </Link>
-            <Link href="" className="py-3">
+            <Link
+              href="https://www.facebook.com/profile.php?id=61558057246693&locale=fr_FR"
+              className="py-3"
+              target="blank"
+            >
               <Image
                 src={facebookLogo}
                 alt="logo facebook"

@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import { Home, Menu } from "lucide-react";
 import { useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 const links = [
   { href: "/", label: "Accueil" },
@@ -18,10 +19,12 @@ export default function Header() {
   const pathname = usePathname();
   return (
     <header className="md:px-14 px-4 z-50 py-3 bg-[hsl(var(--foreground))] fixed top-0 w-full flex justify-between border-b-2 border-green-800">
-      <div className="flex items-center">
-        <Image src={logoSite} alt="logo du site" className="w-12 h-12" />
-        <h1 className="text-white ml-2">NebLink</h1>
-      </div>
+      <Link href="/">
+        <div className="flex items-center">
+          <Image src={logoSite} alt="logo du site" className="w-12 h-12" />
+          <h1 className="text-white ml-2">NebLink</h1>
+        </div>
+      </Link>
       <nav className="text-white text-2xl flex items-center mr-2">
         <Menu
           size={40}
@@ -32,11 +35,13 @@ export default function Header() {
           <Link
             key={link.href}
             href={link.href}
-            className={clsx(
-              "transition duration-150 ease-in-out mx-4 my-1 md:block hidden",
-              {
-                "border-b-2 border-primary": pathname === link.href,
-              }
+            className={twMerge(
+              clsx(
+                "transition duration-150 ease-in-out mx-4 my-1 px-1 py-1 md:block hidden border-b-2 border-foreground hover:border-primary",
+                {
+                  "border-b-2 border-primary": pathname === link.href,
+                }
+              )
             )}
           >
             {link.label}
