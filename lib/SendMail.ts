@@ -11,7 +11,7 @@ interface FormData {
 export const SendEmail = async (dataForm: FormData) => {
   const { data, error } = await resend.emails.send({
     from: "contact@creafannym.fr",
-    to: "contact@neblink.fr",
+    to: "benjamin.perez@outlook.fr",
     subject: "Formulaire de contact du site",
     react: Email(dataForm),
   });

@@ -42,7 +42,7 @@ export const Reveal = ({
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.4, delay: delay }}
+        transition={{ duration: 0.5, delay: delay }}
         exit={{ opacity: 0 }}
       >
         {children}
@@ -54,7 +54,7 @@ export const Reveal = ({
         }}
         initial="hidden"
         animate={slideControls}
-        transition={{ duration: 0.4, ease: "easeIn", delay: delay }}
+        transition={{ duration: 0.3, ease: "easeIn", delay: delay }}
         style={{
           position: "absolute",
           top: 4,

@@ -22,10 +22,13 @@ export function Footer() {
         </div>
         <div className="flex flex-col">
           <h3 className="text-white text-lg font-semibold py-5">Contact</h3>
-          <Link href="" className="text-white py-2 flex">
+          <Link
+            href="mailto:contact@neblink.fr"
+            className="text-white py-2 flex"
+          >
             <Mail size={20} className="mt-[2px] mr-2" /> Contact@neblink.fr
           </Link>
-          <Link href="" className="text-white py-2 flex">
+          <Link href="tel:0744476707" className="text-white py-2 flex">
             <Phone size={20} className="mt-[2px] mr-2" /> 07 44 47 69 07
           </Link>
           <div className="flex mt-2">
