@@ -10,7 +10,7 @@ import { Reveal } from "./utils/Reveal";
 export const InfoContainer = () => {
   return (
     <div className="backdrop1 md:px-36 md:py-24">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <div className="flex flex-col gap-12 justify-between ">
           <Reveal>
             <div className="w-full md:w-full px-4 mb-8 flex lg:flex-row flex-col">

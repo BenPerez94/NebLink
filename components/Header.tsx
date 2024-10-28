@@ -18,8 +18,8 @@ export default function Header() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const pathname = usePathname();
   return (
-    <header className="md:px-14 px-4 z-50 py-3 bg-[hsl(var(--foreground))] fixed top-0 w-full flex justify-between border-b-2 border-green-800">
-      <Link href="/">
+    <header className="md:px-14 px-4 z-50 py-3 bg-[hsl(var(--foreground))] fixed top-0 w-full flex justify-between border-b-4 border-[#021d02]">
+      <Link href="/" className="mt-1.5">
         <div className="flex items-center">
           <Image src={logoSite} alt="logo du site" className="w-12 h-12" />
           <h1 className="text-white ml-2">NebLink</h1>
@@ -37,9 +37,9 @@ export default function Header() {
             href={link.href}
             className={twMerge(
               clsx(
-                "transition duration-150 ease-in-out mx-4 my-1 px-1 py-1 md:block hidden border-b-2 border-foreground hover:border-primary",
+                "transition rounded duration-150 border border-foreground  ease-in-out mx-2 my-1 px-4 py-2 md:block hidden hover:bg-[#121512] hover:border-[#161816]",
                 {
-                  "border-b-2 border-primary": pathname === link.href,
+                  "bg-[#121512] border-[#161816] ": pathname === link.href,
                 }
               )
             )}

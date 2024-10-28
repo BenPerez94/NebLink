@@ -2,6 +2,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { InfoContainer } from "@/components/InfoContainer";
 import { ProductContainer } from "@/components/ProductContainer";
 import { PromiseContainer } from "@/components/PromiseContainer";
+import { RealisationContainer } from "@/components/Realisations";
 import { CtaContainer } from "@/components/ctaContainer";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <PromiseContainer />
       <InfoContainer />
       <ProductContainer />
+      <RealisationContainer />
       <ContactForm />
     </main>
   );

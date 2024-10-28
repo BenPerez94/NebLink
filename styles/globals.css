@@ -90,4 +90,10 @@
       url("../public/bgWatter.jpg");
     background-size: cover;
   }
+
+  .backdrop2 {
+    background: linear-gradient(rgba(0, 128, 64, 0.7), rgba(0, 128, 64, 0.5)),
+      url("../public/bgbubble.jpg");
+    background-size: cover;
+  }
 }

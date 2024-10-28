@@ -9,7 +9,7 @@ export const CtaContainer = () => {
   console.log(bgSectionOne);
   return (
     <div className="px-6  py-8 pb-24  text-left backdrop h-screen justify-center items-center flex">
-      <div className=" mx-auto max-w-4xl">
+      <div className="flex flex-col mx-auto max-w-4xl">
         <Reveal delay={0}>
           <div className=" items-center my-12 hidden md:flex">
             <Image src={logoSite} alt="logo du site" className="w-24 h-24" />

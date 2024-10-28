@@ -4,7 +4,6 @@ import bgSectionOne from "@/public/backgroundSectionOne.jpg";
 import { Reveal } from "./utils/Reveal";
 
 export const ProductContainer = () => {
-  console.log(bgSectionOne);
   return (
     <div className="px-6 py-36 mt-90 text-left backdrop ">
       <div className=" mx-auto max-w-4xl">

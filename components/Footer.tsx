@@ -19,6 +19,9 @@ export function Footer() {
           <p className="text-white text-lg max-w-2xl p-1 mt-3.5 mb-6 mr-6">
             {textFooter}
           </p>
+          <p className="text-[#647764] text-sm pt-2 border-t border-[#647764] w-1/2">
+            NebLink 2024 © Tous droits réservés{" "}
+          </p>
         </div>
         <div className="flex flex-col">
           <h3 className="text-white text-lg font-semibold py-5">Contact</h3>
@@ -60,11 +63,6 @@ export function Footer() {
             </Link>
           </div>
         </div>
-      </div>
-      <div className="bg-[#222222] text-accent py-2 text-center text-xs text-light">
-        <p className="text-accent text-lg">
-          NebLink 2024 © Tous droits réservés{" "}
-        </p>
       </div>
     </footer>
   );
