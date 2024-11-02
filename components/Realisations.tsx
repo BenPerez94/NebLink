@@ -6,13 +6,13 @@ import creafannym from "@/public/creafannym.png";
 export const RealisationContainer = () => {
   return (
     <div className=" bg-background">
-      <div className="container px-24 py-20 m-auto">
+      <div className="lg:container lg:px-24 py-20 m-auto">
         <h2 className="pb-12 text-3xl font-semibold text-center text-foreground">
           Réalisations
         </h2>
-        <div className="flex justify-center gap-6 p-3">
+        <div className="flex lg:flex-row flex-col justify-center gap-6 p-3">
           <a href="https://creafannym.fr" target="_blank">
-            <div className="p-3 transition-all duration-300 border-2 rounded-lg shadow-lg border-border bg-card w-96 hover:cursor-pointer hover:scale-105">
+            <div className="p-3 transition-all duration-300 border-2 rounded-lg shadow-lg border-border bg-card lg:w-96 w-full hover:cursor-pointer hover:scale-105">
               <Image
                 src={creafannym}
                 alt=""
@@ -24,7 +24,7 @@ export const RealisationContainer = () => {
             </div>
           </a>
           <a href="https://chrisnutrition.com" target="_blank">
-            <div className="p-3 transition-all duration-300 border-2 rounded-lg shadow-lg border-border bg-card w-96 hover:cursor-pointer hover:scale-105">
+            <div className="p-3 transition-all duration-300 border-2 rounded-lg shadow-lg border-border bg-card lg:w-96 w-full hover:cursor-pointer hover:scale-105">
               <Image
                 src={chrisnutrition}
                 alt=""
