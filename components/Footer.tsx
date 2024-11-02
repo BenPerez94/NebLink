@@ -10,7 +10,7 @@ const textFooter = `Notre mission consiste à fournir des solutions numériques 
 export function Footer() {
   return (
     <footer className="bg-foreground">
-      <div className="px-14 py-4 flex md:flex-row flex-col justify-start md:justify-between max-w-7xl mx-auto pt-14">
+      <div className="lg:px-14 px-6 py-4 flex md:flex-row flex-col justify-start md:justify-between max-w-7xl mx-auto pt-14">
         <div>
           <div className="flex items-center">
             <Image src={logo} alt="logo du site" className="w-12 h-12" />
@@ -19,7 +19,7 @@ export function Footer() {
           <p className="text-white text-lg max-w-2xl p-1 mt-3.5 mb-6 mr-6">
             {textFooter}
           </p>
-          <p className="text-[#647764] text-sm pt-2 border-t border-[#647764] w-1/2">
+          <p className="text-[#647764] text-sm pt-2 border-t border-[#647764] lg:w-1/2 w-full">
             NebLink 2024 © Tous droits réservés{" "}
           </p>
         </div>
