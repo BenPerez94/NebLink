@@ -79,22 +79,22 @@ export const ContactForm = () => {
               onSubmit={handleSubmit(onSubmit)}
             >
               <Input
-                className="my-2"
+                className="my-2 text-black"
                 placeholder="Nom "
                 {...register("nameContact", { required: true })}
               />
               <Input
-                className="my-2"
+                className="my-2 text-black"
                 placeholder="Email"
                 {...register("emailContact", { required: true })}
               />
               <Input
-                className="my-2"
+                className="my-2 text-black"
                 placeholder="Numéro"
                 {...register("numberContact", { required: true })}
               />
               <Textarea
-                className="my-2 h-36 resize-none"
+                className="my-2 h-36 resize-none text-black"
                 placeholder="Message"
                 {...register("messageContact", { required: true })}
               />
