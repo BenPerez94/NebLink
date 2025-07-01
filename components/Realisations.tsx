@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import chrisnutrition from "@/public/chrisnutrition.png";
 import creafannym from "@/public/creafannym.png";
+import laureandco from "@/public/laureandco.jpg";
 
 export const RealisationContainer = () => {
   return (
@@ -32,6 +33,18 @@ export const RealisationContainer = () => {
               />
               <h3 className="py-3 text-2xl font-semibold text-center text-foreground">
                 Chrisnutrition.com
+              </h3>
+            </div>
+          </a>
+          <a href="https://laureandco.fr" target="_blank">
+            <div className="p-3 transition-all duration-300 border-2 rounded-lg shadow-lg border-border bg-card lg:w-96 w-full hover:cursor-pointer hover:scale-105">
+              <Image
+                src={laureandco}
+                alt=""
+                className="object-cover w-full border rounded-t h-52 border-border"
+              />
+              <h3 className="py-3 text-2xl font-semibold text-center text-foreground">
+                Laureandco.fr
               </h3>
             </div>
           </a>
