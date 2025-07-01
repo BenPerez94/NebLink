@@ -20,7 +20,7 @@ export function Footer() {
             {textFooter}
           </p>
           <p className="text-[#647764] text-sm pt-2 border-t border-[#647764] lg:w-1/2 w-full">
-            NebLink 2024 © Tous droits réservés{" "}
+            NebLink 2024-2025 © Tous droits réservés{" "}
           </p>
         </div>
         <div className="flex flex-col">
